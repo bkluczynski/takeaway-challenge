@@ -1,25 +1,19 @@
 
+
 class TakeAway
 
-attr_reader :menu, :order
+attr_reader :menu
 
-
-def initialize(menu: menu, order: nil)
+def initialize(menu)
   @menu = menu
-  @order = order
-end
-
-def print_menu
-  menu.print_this
-end
-
-def place_order(dishes)
-  dishes.each do |dish, quantity|
-    order.add(dish,quantity)
-  end
-    order.total
 end
 
 
+def show_menu
+menu.show
+end
+
 
 end
+
+ 
